@@ -9,7 +9,24 @@ import SwiftUI
 
 struct BookView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        HStack{
+            Text("Image") // Image
+            
+            Spacer()
+            
+            VStack{
+                Text("Title") // Title
+                Text("Author") // Author
+                Text("Editor") // Editors
+            }
+            
+            
+            // Change this stack to be left aligned
+            
+            
+            
+        }
+        .padding()
     }
 }
 

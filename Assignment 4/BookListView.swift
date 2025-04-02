@@ -11,7 +11,20 @@ struct BookListView: View {
     var body: some View {
         List {
             ForEach(0..<5, id: \.self) { i in
-                Text("Item \(i)")
+                HStack{
+                    BookView()
+                    
+                    Spacer()
+                    
+                    Button(action:{
+                        print("clicked")
+                        // Toggle the below:
+                            // Add/remove object to favorites array
+                            // Fill/unfill heart
+                    }){
+                        Image(systemName: "heart")
+                    }
+                }
             }
         }
     }
