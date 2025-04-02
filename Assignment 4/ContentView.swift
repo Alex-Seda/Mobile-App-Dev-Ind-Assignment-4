@@ -33,11 +33,7 @@ struct ContentView: View {
                 .padding(.horizontal)
                 
                 
-                List {
-                    ForEach(0..<5, id: \.self) { i in
-                        Text("Item \(i)")
-                    }
-                }
+                BookListView()
                 
                 
             }
