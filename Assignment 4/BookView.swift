@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct BookView: View {
+    @State private var fav = false
     var body: some View {
         //@Binding var book: Book
         
@@ -21,9 +22,29 @@ struct BookView: View {
             }
             
             Spacer()
-            // Change this stack to be left aligned
             
-            
+            Button(action:{
+                fav.toggle()
+                /*
+                 
+                 if(book.favorite){
+                    toggle favorite
+                    
+                 }
+                 else{
+                 
+                 }
+                 
+                 */
+                
+                
+                // Toggle the below:
+                    // Add/remove object to favorites array
+                    // Fill/unfill heart
+            }){
+                Image(systemName: fav ? "heart.fill" : "heart")
+                    .foregroundColor(.red)
+            }
             
         }
         .padding()

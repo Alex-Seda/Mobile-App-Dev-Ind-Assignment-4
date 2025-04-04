@@ -2,7 +2,7 @@
 //  Book+CoreDataProperties.swift
 //  Assignment 4
 //
-//  Created by Alex on 4/3/25.
+//  Created by Alex on 4/4/25.
 //
 //
 
@@ -16,10 +16,11 @@ extension Book {
         return NSFetchRequest<Book>(entityName: "Book")
     }
 
-    @NSManaged public var image: Data?
-    @NSManaged public var title: String?
     @NSManaged public var author: String?
     @NSManaged public var editors: String?
+    @NSManaged public var image: Data?
+    @NSManaged public var title: String?
+    @NSManaged public var favorite: Bool
 
 }
 

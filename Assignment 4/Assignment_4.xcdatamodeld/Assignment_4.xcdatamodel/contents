@@ -3,6 +3,7 @@
     <entity name="Book" representedClassName="Book" syncable="YES">
         <attribute name="author" optional="YES" attributeType="String"/>
         <attribute name="editors" optional="YES" attributeType="String"/>
+        <attribute name="favorite" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
         <attribute name="image" optional="YES" attributeType="Binary" valueTransformerName="NSSecure" customClassName="UIImage"/>
         <attribute name="title" optional="YES" attributeType="String"/>
     </entity>

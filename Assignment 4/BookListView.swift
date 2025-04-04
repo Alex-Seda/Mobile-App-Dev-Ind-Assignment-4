@@ -16,17 +16,6 @@ struct BookListView: View {
             ForEach(0..<5, id: \.self) { i in
                 HStack{
                     BookView(/*$books[i]*/)
-                    
-                    Spacer()
-                    
-                    Button(action:{
-                        print("clicked")
-                        // Toggle the below:
-                            // Add/remove object to favorites array
-                            // Fill/unfill heart
-                    }){
-                        Image(systemName: "heart")
-                    }
                 }
             }
         }
