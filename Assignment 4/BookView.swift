@@ -12,15 +12,13 @@ struct BookView: View {
         HStack{
             Text("Image") // Image
             
-            Spacer()
-            
             VStack{
                 Text("Title") // Title
                 Text("Author") // Author
                 Text("Editor") // Editors
             }
             
-            
+            Spacer()
             // Change this stack to be left aligned
             
             
