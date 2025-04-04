@@ -9,10 +9,13 @@ import SwiftUI
 
 struct BookListView: View {
     var body: some View {
+        @State var viewModel = BookViewModel()
+        @State var books = viewModel.books
+        
         List {
             ForEach(0..<5, id: \.self) { i in
                 HStack{
-                    BookView()
+                    BookView(/*$books[i]*/)
                     
                     Spacer()
                     

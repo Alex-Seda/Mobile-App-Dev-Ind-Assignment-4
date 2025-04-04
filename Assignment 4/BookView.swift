@@ -9,6 +9,8 @@ import SwiftUI
 
 struct BookView: View {
     var body: some View {
+        //@Binding var book: Book
+        
         HStack{
             Text("Image") // Image
             
